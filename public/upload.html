@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Sound</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="/manifest.json" />
+</head>
+<body>
+
+  <header>
+    <h1>Upload Sound</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/upload">Upload</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Record or Upload Sound</h2>
+
+    <div id="microphone-section">
+      <button id="startRecording">Start Recording</button>
+      <button id="stopRecording" disabled>Stop Recording</button>
+      <p id="recordingStatus"></p>
+      <audio id="recordedAudio" controls></audio>
+      <input type="text" id="soundName" placeholder="Enter sound name">
+      <button id="uploadMicrophone">Upload</button>
+    </div>
+
+    <div id="file-upload-section">
+      <input type="file" accept=".mp3" id="mp3FileInput">
+      <button id="uploadFile">Upload MP3 File</button>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Web2_Lab5</p>
+  </footer>
+
+  <script src="upload.js"></script>
+</body>
+</html>
